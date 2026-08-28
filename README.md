@@ -2,6 +2,9 @@
 
 A hands-on guide to building, orchestrating, and maintaining multi-agent workflows in **Microsoft Foundry**.
 
+[![Follow me on GitHub](https://img.shields.io/github/followers/nisalgunawardhana?label=Follow&style=social)](https://github.com/nisalgunawardhana)
+[![Star this repo](https://img.shields.io/github/stars/nisalgunawardhana/Microsoft-Foundry-Workflow?style=social)](https://github.com/nisalgunawardhana/Microsoft-Foundry-Workflow/stargazers)
+
 📚 **[Documentation](docs/README.md)** · 🧪 **[Demo: Sequential Workflow Sample](demo/sequencial-workflow-sample/)**
 
 ---
