@@ -2,7 +2,7 @@
 
 A guide to building, orchestrating, and maintaining multi-agent workflows in **Microsoft Foundry**. Read the documents in order, or jump to what you need.
 
-> **New here?** Start with the [repository README](../README.md) for a one-page overview, then read [0. Intro](00-intro.md).
+> **New here?** Start with the [repository README](../README.md) for a one-page overview, then read [1. Introduction](01-introduction.md).
 
 ---
 
@@ -10,7 +10,6 @@ A guide to building, orchestrating, and maintaining multi-agent workflows in **M
 
 | # | Document | Time | What it covers |
 | --- | --- | --- | --- |
-| 0 | [Intro](00-intro.md) | 1 min | A short standalone intro to the docs and the support-triage scenario. |
 | 1 | [Introduction](01-introduction.md) | 3 min | Why multi-agent workflows, the running scenario, learning objectives. |
 | 2 | [What are workflows?](02-what-are-workflows.md) | 3 min | Nodes, execution paths, and why workflows matter. |
 | 3 | [Identify workflow patterns](03-identify-workflow-patterns.md) | 3 min | Sequential, human-in-the-loop, and group-chat patterns. |
@@ -39,7 +38,7 @@ After working through these documents, you'll be able to:
 
 | | |
 | --- | --- |
-| **Demos** | [`../demos/`](../demos/) — runnable workflow examples (start with `triage-workflow`). |
+| **Demo** | [`../demo/sequencial-workflow-sample/`](../demo/sequencial-workflow-sample/) — a runnable three-agent sequential workflow you build in Foundry and invoke from code. |
 | **Images** | [`images/`](images/) — diagrams referenced by these documents. |
 
 ---
@@ -49,7 +48,6 @@ After working through these documents, you'll be able to:
 ```
 docs/
 ├── README.md          ← this index
-├── 00-intro.md        ← short standalone intro
 ├── 01-introduction.md
 ├── 02-what-are-workflows.md
 ├── 03-identify-workflow-patterns.md
@@ -64,4 +62,4 @@ docs/
 
 ---
 
-**Next unit:** *Exercise — Create an Agent-driven Workflow* (see [`../demos/`](../demos/)).
+**Next unit:** *Exercise — Create an Agent-driven Workflow* (see [`../demo/sequencial-workflow-sample/`](../demo/sequencial-workflow-sample/)).

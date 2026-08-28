@@ -2,6 +2,8 @@
 
 > Part of the [Microsoft Foundry Workflows docs](README.md).
 > **Next:** [What are workflows?](02-what-are-workflows.md)
+>
+> **New here?** Start with the [repository README](../README.md) for a one-page overview, then work through these documents in order.
 
 ---
 
@@ -38,6 +40,10 @@ Workflows let you combine multiple AI agents, conditional logic, and human-in-th
 - Implement loops (For-Each) to process multiple inputs efficiently within a single workflow.
 - Apply human-in-the-loop and escalation patterns to manage uncertainty and low-confidence agent responses.
 - Use Power Fx expressions to manipulate data, evaluate conditions, and control flow within workflows.
+
+## Companion demo
+
+A runnable example lives in [`../demo/sequencial-workflow-sample/`](../demo/sequencial-workflow-sample/) — a three-agent sequential workflow you build in Foundry and then invoke from code. Use it to see the concepts in these docs applied end to end.
 
 ---
 

@@ -15,7 +15,7 @@ Before running a workflow, establish a connection to your Foundry project using 
 
 ```python
 # Reference a workflow created in the Foundry portal
-workflow_name = "triage-workflow"
+workflow_name = "support-triage-workflow"
 
 # Create a conversation context for the workflow
 conversation = openai_client.conversations.create()

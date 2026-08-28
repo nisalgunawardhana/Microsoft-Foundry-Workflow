@@ -2,7 +2,7 @@
 
 A hands-on guide to building, orchestrating, and maintaining multi-agent workflows in **Microsoft Foundry**.
 
-📚 **[Documentation](docs/README.md)** · 🧪 **[Demos](demos/README.md)**
+📚 **[Documentation](docs/README.md)** · 🧪 **[Demo: Sequential Workflow Sample](demo/sequencial-workflow-sample/)**
 
 ---
 
@@ -58,18 +58,15 @@ After working through this material, you'll be able to:
 | [`README.md`](README.md) | This file — overview of Microsoft Foundry and agent-driven workflows. |
 | [`docs/`](docs/) | The documentation set. |
 | [`docs/README.md`](docs/README.md) | **Docs index** — links every section below. |
-| [`docs/00-intro.md`](docs/00-intro.md) | Short standalone intro. |
 | [`docs/01…09`](docs/) | One document per section (see the module map). |
 | [`docs/images/`](docs/images/) | Diagrams used throughout the documentation. |
-| [`demos/`](demos/) | Runnable workflow demos. |
-| [`demos/README.md`](demos/README.md) | How to import and run the demos. |
-| [`demos/triage-workflow/`](demos/triage-workflow/) | Support-ticket triage workflow — YAML, agent prompt + schema, and a Python runner. |
+| [`demo/`](demo/) | Runnable workflow demo. |
+| [`demo/sequencial-workflow-sample/`](demo/sequencial-workflow-sample/) | Three-agent sequential marketing-copy workflow — build steps with screenshots, plus a Node.js runner. |
 
 ### Module map
 
 | # | Topic | Time | Document |
 | --- | --- | --- | --- |
-| 0 | Intro | 1 min | [docs/00-intro.md](docs/00-intro.md) |
 | 1 | Introduction & the support-triage scenario | 3 min | [docs/01-introduction.md](docs/01-introduction.md) |
 | 2 | What are workflows? | 3 min | [docs/02-what-are-workflows.md](docs/02-what-are-workflows.md) |
 | 3 | Identify workflow patterns (sequential, human-in-the-loop, group chat) | 3 min | [docs/03-identify-workflow-patterns.md](docs/03-identify-workflow-patterns.md) |
@@ -80,11 +77,34 @@ After working through this material, you'll be able to:
 | 8 | Use workflows in code (Azure AI Projects SDK) | 5 min | [docs/08-use-workflows-in-code.md](docs/08-use-workflows-in-code.md) |
 | 9 | Key terms (glossary) | 2 min | [docs/09-key-terms.md](docs/09-key-terms.md) |
 
-### Demos
+### Demo
 
-| Demo | Pattern | Concepts |
+#### [`demo/sequencial-workflow-sample/`](demo/sequencial-workflow-sample/) — Sequential marketing-copy workflow
+
+A **sequential** workflow that turns a raw product description into polished marketing copy by chaining three agents, each feeding its output to the next via `System.LastMessage`:
+
+```
+Start → Marketing-Analyst → Marketing-Copywriter → Marketing-Editor → End
+```
+
+| Step | Agent | Does |
 | --- | --- | --- |
-| [`demos/triage-workflow/`](demos/triage-workflow/) | Sequential + If/Else routing + human-in-the-loop | Structured agent output (JSON schema), Power Fx conditions, confidence-based escalation, invoke from code |
+| 1 | **Marketing-Analyst** | Extracts key features, target audience, and unique selling points from the product description. |
+| 2 | **Marketing-Copywriter** | Turns that analysis into a ~150-word marketing copy block. |
+| 3 | **Marketing-Editor** | Fixes grammar, tightens clarity, enforces a consistent tone, and returns the final polished copy. |
+
+The demo README walks through building it in the Microsoft Foundry portal step by step (with screenshots): create a project, open the **Workflows** tab, create a **Sequential** workflow, add and configure the three agents, then **Save → Preview → Publish**. Once published, a Node.js script invokes it from code:
+
+```bash
+cd demo/sequencial-workflow-sample
+npm install
+az login
+node run_agent.js
+```
+
+`run_agent.js` uses the **Azure AI Projects SDK** (`@azure/ai-projects`, `@azure/identity`) to retrieve the workflow by name, create a conversation, send a product description, and print `response.output_text`. Configuration (project endpoint, workflow id) lives in [`demo/sequencial-workflow-sample/.env`](demo/sequencial-workflow-sample/.env).
+
+**Concepts demonstrated:** the Sequential pattern, agent chaining with `System.LastMessage`, `System.ConversationId` for conversation context, publishing a workflow, and invoking it from code.
 
 ---
 
@@ -97,7 +117,7 @@ After working through this material, you'll be able to:
 5. Test in the **chat window** — send an input and watch how it flows through each node.
 6. When you're happy, invoke the workflow from code with the **Azure AI Projects SDK** by referencing its name.
 
-See the [docs index](docs/README.md) for the full walkthrough, or jump into [`demos/triage-workflow/`](demos/triage-workflow/) for a working example.
+See the [docs index](docs/README.md) for the full walkthrough, or jump into [`demo/sequencial-workflow-sample/`](demo/sequencial-workflow-sample/) for a working example.
 
 ---
 

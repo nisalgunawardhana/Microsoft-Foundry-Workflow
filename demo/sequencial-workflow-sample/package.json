@@ -1,0 +1,10 @@
+{
+  "name": "sequencial-workflow-sample",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@azure/ai-projects": "2.0.0",
+    "@azure/identity": "4.13.0"
+  }
+}
