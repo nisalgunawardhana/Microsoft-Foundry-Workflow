@@ -54,18 +54,6 @@ After working through this material, you'll be able to:
 
 ---
 
-## Repository contents
-
-| Path | Description |
-| --- | --- |
-| [`README.md`](README.md) | This file — overview of Microsoft Foundry and agent-driven workflows. |
-| [`docs/`](docs/) | The documentation set. |
-| [`docs/README.md`](docs/README.md) | **Docs index** — links every section below. |
-| [`docs/01…09`](docs/) | One document per section (see the module map). |
-| [`docs/images/`](docs/images/) | Diagrams used throughout the documentation. |
-| [`demo/`](demo/) | Runnable workflow demo. |
-| [`demo/sequencial-workflow-sample/`](demo/sequencial-workflow-sample/) | Three-agent sequential marketing-copy workflow — build steps with screenshots, plus a Node.js runner. |
-
 ### Module map
 
 | # | Topic | Time | Document |
