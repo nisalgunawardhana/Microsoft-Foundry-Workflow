@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="900" height="470" fill="#fdf9f3"/>
+  <rect x="60" y="24" width="780" height="60" rx="12" fill="url(#g1)"/>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a06fd6"/>
+      <stop offset="1" stop-color="#3b53b8"/>
+    </linearGradient>
+  </defs>
+  <text x="450" y="63" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="700">Single agent</text>
+
+  <!-- customer bubble -->
+  <rect x="380" y="118" width="460" height="118" rx="14" fill="#ece9fb"/>
+  <text x="404" y="150" fill="#3b53b8" font-size="16" font-weight="700">Customer</text>
+  <text x="404" y="180" fill="#1f2430" font-size="18">I was charged twice and my API isn't</text>
+  <text x="404" y="206" fill="#1f2430" font-size="18">working — can you help?</text>
+
+  <!-- agent bubble -->
+  <rect x="60" y="262" width="620" height="118" rx="14" fill="#ececec"/>
+  <text x="84" y="294" fill="#9153c6" font-size="16" font-weight="700">Agent</text>
+  <text x="84" y="324" fill="#1f2430" font-size="18">For billing issues, contact support. For API errors,</text>
+  <text x="84" y="350" fill="#1f2430" font-size="18">check the documentation.</text>
+
+  <!-- outcome -->
+  <rect x="270" y="404" width="360" height="46" rx="14" fill="#fbe4dc"/>
+  <text x="450" y="433" text-anchor="middle" fill="#c0492b" font-size="17" font-weight="700">Generic or incomplete answers</text>
+</svg>

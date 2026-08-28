@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="900" height="440" fill="#ffffff"/>
+
+  <!-- LEFT: Action settings -->
+  <text x="40" y="44" fill="#9aa0ab" font-size="15">Details</text>
+  <text x="120" y="44" fill="#1f2430" font-size="15" font-weight="700">Action settings</text>
+  <line x1="112" y1="54" x2="238" y2="54" stroke="#8a5cf6" stroke-width="2"/>
+
+  <text x="40" y="92" fill="#8a5cf6" font-size="13">Learn more about how this works ↗</text>
+
+  <text x="40" y="128" fill="#4b5563" font-size="14">Input message</text>
+  <rect x="40" y="140" width="380" height="42" rx="8" fill="#f4f4f6" stroke="#e2e2e5"/>
+  <text x="58" y="166" fill="#1f2430" font-size="14">System.LastMessage</text>
+
+  <rect x="40" y="200" width="40" height="22" rx="11" fill="#8a5cf6"/>
+  <circle cx="70" cy="211" r="9" fill="#fff"/>
+  <text x="94" y="209" fill="#1f2430" font-size="13">Automatically include agent response as part</text>
+  <text x="94" y="226" fill="#1f2430" font-size="13">of the workflow (external) conversation.</text>
+
+  <text x="40" y="272" fill="#4b5563" font-size="14">Save agent output message as</text>
+  <rect x="40" y="284" width="380" height="42" rx="8" fill="#f4f4f6" stroke="#e2e2e5"/>
+  <text x="58" y="310" fill="#1f2430" font-size="14">Local.TextOutput</text>
+
+  <text x="40" y="356" fill="#4b5563" font-size="14">Save output json_object / json_schema as</text>
+  <rect x="40" y="368" width="380" height="42" rx="8" fill="#f4f4f6" stroke="#e2e2e5"/>
+  <text x="58" y="394" fill="#1f2430" font-size="14">Local.JsonOutput</text>
+
+  <!-- divider -->
+  <line x1="470" y1="24" x2="470" y2="416" stroke="#ececec" stroke-width="1"/>
+
+  <!-- RIGHT: Details / parameters -->
+  <text x="510" y="44" fill="#1f2430" font-size="15" font-weight="700">Details</text>
+  <line x1="502" y1="54" x2="560" y2="54" stroke="#8a5cf6" stroke-width="2"/>
+  <text x="590" y="44" fill="#9aa0ab" font-size="15">Action settings</text>
+
+  <rect x="510" y="80" width="260" height="42" rx="8" fill="#f4f4f6" stroke="#e2e2e5"/>
+  <text x="528" y="106" fill="#1f2430" font-size="14">gpt-4.1</text>
+
+  <rect x="510" y="140" width="350" height="230" rx="12" fill="#ffffff" stroke="#e2e2e5"/>
+  <text x="534" y="172" fill="#1f2430" font-size="15" font-weight="700">Parameters</text>
+
+  <text x="534" y="206" fill="#4b5563" font-size="13">Temperature</text>
+  <text x="820" y="206" fill="#1f2430" font-size="13" text-anchor="end">0.7</text>
+  <rect x="534" y="216" width="300" height="6" rx="3" fill="#e2e2e5"/>
+  <rect x="534" y="216" width="120" height="6" rx="3" fill="#8a5cf6"/>
+  <circle cx="654" cy="219" r="8" fill="#8a5cf6"/>
+
+  <text x="534" y="256" fill="#4b5563" font-size="13">Top P</text>
+  <text x="820" y="256" fill="#1f2430" font-size="13" text-anchor="end">1</text>
+  <rect x="534" y="266" width="300" height="6" rx="3" fill="#e2e2e5"/>
+  <rect x="534" y="266" width="300" height="6" rx="3" fill="#8a5cf6"/>
+  <circle cx="834" cy="269" r="8" fill="#8a5cf6"/>
+
+  <text x="534" y="312" fill="#4b5563" font-size="13">Text format</text>
+  <rect x="620" y="298" width="214" height="34" rx="8" fill="#f4f4f6" stroke="#e2e2e5"/>
+  <text x="638" y="320" fill="#1f2430" font-size="13">Text</text>
+  <rect x="620" y="334" width="214" height="30" rx="6" fill="#ffffff" stroke="#ececec"/>
+  <text x="638" y="354" fill="#4b5563" font-size="13">JSON Object</text>
+  <rect x="620" y="364" width="214" height="30" rx="6" fill="#eef0ff"/>
+  <text x="638" y="384" fill="#3b53b8" font-size="13" font-weight="600">JSON Schema</text>
+</svg>

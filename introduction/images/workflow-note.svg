@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="900" height="420" fill="#f7f7f8"/>
+  <defs>
+    <pattern id="dots3" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#e2e2e5"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="420" fill="url(#dots3)"/>
+
+  <!-- spine -->
+  <line x1="640" y1="40" x2="640" y2="400" stroke="#c7c7cc" stroke-width="2"/>
+
+  <!-- Send message -->
+  <rect x="520" y="56" width="240" height="56" rx="12" fill="#ffffff" stroke="#d7d7db"/>
+  <rect x="538" y="72" width="24" height="24" rx="6" fill="#e879c7"/>
+  <text x="576" y="90" fill="#1f2430" font-size="15" font-weight="600">Send message</text>
+
+  <!-- Triage-Agent -->
+  <rect x="520" y="176" width="240" height="56" rx="12" fill="#ffffff" stroke="#a78bfa" stroke-width="2"/>
+  <rect x="538" y="192" width="24" height="24" rx="6" fill="#5ec9c9"/>
+  <text x="576" y="210" fill="#1f2430" font-size="15" font-weight="600">Triage-Agent</text>
+
+  <!-- If/Else -->
+  <rect x="520" y="296" width="240" height="56" rx="12" fill="#ffffff" stroke="#d7d7db"/>
+  <rect x="538" y="312" width="24" height="24" rx="6" fill="#f0b840"/>
+  <text x="576" y="330" fill="#1f2430" font-size="15" font-weight="600">If / Else condition</text>
+
+  <!-- Note -->
+  <rect x="60" y="120" width="420" height="170" rx="14" fill="#fbe8bf"/>
+  <text x="88" y="160" fill="#5f5326" font-size="14">The Triage agent categorizes tickets into technical,</text>
+  <text x="88" y="182" fill="#5f5326" font-size="14">billing, or general questions.</text>
+  <text x="88" y="222" fill="#5f5326" font-size="14">Outputs are stored in Local.TicketCategory and</text>
+  <text x="88" y="244" fill="#5f5326" font-size="14">include the confidence score for each classification.</text>
+
+  <!-- connector from note to agent -->
+  <line x1="480" y1="204" x2="520" y2="204" stroke="#d9c69a" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <text x="450" y="400" text-anchor="middle" fill="#9aa0ab" font-size="13">A note attached to a workflow node, documenting its purpose for maintainers</text>
+</svg>

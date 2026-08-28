@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="760" viewBox="0 0 900 760" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="900" height="760" fill="#f7f7f8"/>
+  <!-- dotted grid -->
+  <defs>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#e2e2e5"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="760" fill="url(#dots)"/>
+
+  <!-- connector spine -->
+  <line x1="450" y1="70" x2="450" y2="600" stroke="#c7c7cc" stroke-width="2"/>
+
+  <!-- Start -->
+  <rect x="360" y="34" width="180" height="52" rx="12" fill="#ffffff" stroke="#d7d7db"/>
+  <rect x="374" y="48" width="24" height="24" rx="6" fill="#43b581"/>
+  <text x="412" y="65" fill="#1f2430" font-size="16" font-weight="600">Start</text>
+  <circle cx="530" cy="79" r="7" fill="#43b581"/>
+  <text x="527" y="84" fill="#fff" font-size="9">✓</text>
+
+  <!-- Set variable -->
+  <rect x="340" y="112" width="220" height="52" rx="12" fill="#ffffff" stroke="#d7d7db"/>
+  <rect x="356" y="126" width="24" height="24" rx="6" fill="#8a7be8"/>
+  <text x="392" y="143" fill="#1f2430" font-size="16" font-weight="600">Set variable</text>
+
+  <!-- student-agent -->
+  <rect x="330" y="190" width="240" height="52" rx="12" fill="#ffffff" stroke="#d7d7db"/>
+  <rect x="346" y="204" width="24" height="24" rx="6" fill="#5ec9c9"/>
+  <text x="382" y="221" fill="#1f2430" font-size="16" font-weight="600">student-agent</text>
+
+  <!-- teacher-agent -->
+  <rect x="330" y="268" width="240" height="52" rx="12" fill="#ffffff" stroke="#d7d7db"/>
+  <rect x="346" y="282" width="24" height="24" rx="6" fill="#5ec9c9"/>
+  <text x="382" y="299" fill="#1f2430" font-size="16" font-weight="600">teacher-agent</text>
+
+  <!-- Set variable 2 -->
+  <rect x="340" y="346" width="220" height="52" rx="12" fill="#ffffff" stroke="#d7d7db"/>
+  <rect x="356" y="360" width="24" height="24" rx="6" fill="#8a7be8"/>
+  <text x="392" y="377" fill="#1f2430" font-size="16" font-weight="600">Set variable</text>
+
+  <!-- If/Else condition -->
+  <rect x="330" y="424" width="240" height="52" rx="12" fill="#ffffff" stroke="#d7d7db"/>
+  <rect x="346" y="438" width="24" height="24" rx="6" fill="#f0b840"/>
+  <text x="382" y="455" fill="#1f2430" font-size="16" font-weight="600">If / Else condition</text>
+
+  <!-- branch lines -->
+  <path d="M450 476 C 450 500, 200 500, 200 528" fill="none" stroke="#c7c7cc" stroke-width="2"/>
+  <path d="M450 476 L 450 528" fill="none" stroke="#c7c7cc" stroke-width="2"/>
+  <path d="M450 476 C 450 500, 700 500, 700 528" fill="none" stroke="#c7c7cc" stroke-width="2"/>
+
+  <!-- If -->
+  <rect x="70" y="528" width="260" height="92" rx="12" fill="#ffffff" stroke="#43b581" stroke-width="2"/>
+  <rect x="86" y="542" width="22" height="22" rx="6" fill="#f0b840"/>
+  <text x="120" y="558" fill="#1f2430" font-size="15" font-weight="600">If</text>
+  <text x="86" y="586" fill="#6a7a2f" font-size="12" font-family="monospace">!IsBlank(Find("[COMPLETE]",</text>
+  <text x="86" y="604" fill="#6a7a2f" font-size="12" font-family="monospace">Upper(Last(Local.LatestMessage).Text)))</text>
+
+  <!-- Else If -->
+  <rect x="360" y="528" width="200" height="72" rx="12" fill="#ffffff" stroke="#d7d7db"/>
+  <rect x="376" y="542" width="22" height="22" rx="6" fill="#f0b840"/>
+  <text x="410" y="558" fill="#1f2430" font-size="15" font-weight="600">Else If</text>
+  <text x="376" y="586" fill="#6a7a2f" font-size="12" font-family="monospace">Local.TurnCount &gt;= 4</text>
+
+  <!-- Else -->
+  <rect x="600" y="528" width="230" height="52" rx="12" fill="#ffffff" stroke="#43b581" stroke-width="2"/>
+  <rect x="616" y="542" width="22" height="22" rx="6" fill="#f0b840"/>
+  <text x="650" y="559" fill="#1f2430" font-size="15" font-weight="600">Else</text>
+
+  <!-- leaf nodes -->
+  <line x1="200" y1="620" x2="200" y2="654" stroke="#c7c7cc" stroke-width="2"/>
+  <rect x="120" y="654" width="160" height="48" rx="12" fill="#ffffff" stroke="#d7d7db"/>
+  <rect x="136" y="667" width="22" height="22" rx="6" fill="#e8607d"/>
+  <text x="170" y="683" fill="#1f2430" font-size="15" font-weight="600">End</text>
+
+  <line x1="450" y1="600" x2="450" y2="654" stroke="#c7c7cc" stroke-width="2"/>
+  <rect x="350" y="654" width="200" height="48" rx="12" fill="#ffffff" stroke="#d7d7db"/>
+  <rect x="366" y="667" width="22" height="22" rx="6" fill="#e879c7"/>
+  <text x="400" y="683" fill="#1f2430" font-size="15" font-weight="600">Send message</text>
+
+  <line x1="700" y1="580" x2="700" y2="654" stroke="#c7c7cc" stroke-width="2"/>
+  <rect x="620" y="654" width="180" height="48" rx="12" fill="#ffffff" stroke="#d7d7db"/>
+  <rect x="636" y="667" width="22" height="22" rx="6" fill="#f0b840"/>
+  <text x="670" y="683" fill="#1f2430" font-size="15" font-weight="600">Go to</text>
+
+  <!-- loop-back -->
+  <path d="M800 678 C 860 678, 860 216, 570 216" fill="none" stroke="#c7c7cc" stroke-width="2"/>
+  <path d="M582 210 L 570 216 L 582 222" fill="none" stroke="#a78bfa" stroke-width="2"/>
+
+  <text x="450" y="736" text-anchor="middle" fill="#9aa0ab" font-size="13">A group-chat workflow in the Microsoft Foundry designer</text>
+</svg>

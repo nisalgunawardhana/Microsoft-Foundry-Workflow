@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="900" height="520" fill="#f7f7f8"/>
+  <defs>
+    <pattern id="dots2" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#e2e2e5"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="520" fill="url(#dots2)"/>
+
+  <!-- Start chip -->
+  <rect x="40" y="30" width="150" height="52" rx="12" fill="#ffffff" stroke="#a78bfa" stroke-width="2"/>
+  <rect x="56" y="44" width="24" height="24" rx="6" fill="#43b581"/>
+  <text x="92" y="62" fill="#1f2430" font-size="16" font-weight="600">Start</text>
+
+  <!-- top-right toggles -->
+  <rect x="560" y="26" width="300" height="40" rx="10" fill="#ffffff" stroke="#e0e0e3"/>
+  <text x="590" y="51" fill="#6b7280" font-size="14">Visualizer</text>
+  <text x="690" y="51" fill="#9aa0ab" font-size="14">YAML</text>
+  <text x="770" y="51" fill="#9aa0ab" font-size="14">Code</text>
+
+  <!-- panel -->
+  <rect x="150" y="96" width="560" height="392" rx="14" fill="#ffffff" stroke="#e4e4e7"/>
+  <text x="182" y="134" fill="#1f2430" font-size="22" font-weight="700">Add a workflow action</text>
+  <rect x="182" y="150" width="496" height="40" rx="8" fill="#f2f2f4"/>
+  <text x="206" y="175" fill="#9aa0ab" font-size="14">Search</text>
+
+  <text x="182" y="222" fill="#6b7280" font-size="13" font-weight="700" letter-spacing="1">INVOKE</text>
+  <rect x="182" y="234" width="496" height="60" rx="10" fill="#ffffff" stroke="#e8e8eb"/>
+  <rect x="198" y="248" width="30" height="30" rx="7" fill="#5ec9c9"/>
+  <text x="244" y="262" fill="#1f2430" font-size="15" font-weight="600">Invoke agent</text>
+  <text x="244" y="282" fill="#9aa0ab" font-size="12">Call an Azure AI agent to process requests</text>
+
+  <text x="182" y="330" fill="#6b7280" font-size="13" font-weight="700" letter-spacing="1">DATA TRANSFORMATION</text>
+  <rect x="182" y="342" width="496" height="56" rx="10" fill="#ffffff" stroke="#e8e8eb"/>
+  <rect x="198" y="354" width="30" height="30" rx="7" fill="#8a7be8"/>
+  <text x="244" y="368" fill="#1f2430" font-size="15" font-weight="600">Set variable</text>
+  <text x="244" y="388" fill="#9aa0ab" font-size="12">Set a variable value for use in subsequent nodes</text>
+
+  <rect x="182" y="408" width="496" height="56" rx="10" fill="#ffffff" stroke="#e8e8eb"/>
+  <rect x="198" y="420" width="30" height="30" rx="7" fill="#8a7be8"/>
+  <text x="244" y="434" fill="#1f2430" font-size="15" font-weight="600">Reset variable</text>
+  <text x="244" y="454" fill="#9aa0ab" font-size="12">Reset a variable to its default value</text>
+
+  <text x="430" y="508" text-anchor="middle" fill="#9aa0ab" font-size="13">The Microsoft Foundry workflow designer — available node types</text>
+</svg>

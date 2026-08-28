@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="900" height="470" fill="#fdf9f3"/>
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a06fd6"/>
+      <stop offset="1" stop-color="#3b53b8"/>
+    </linearGradient>
+  </defs>
+  <rect x="60" y="24" width="780" height="60" rx="12" fill="url(#g2)"/>
+  <text x="450" y="63" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="700">Multi-agent workflow</text>
+
+  <!-- customer bubble -->
+  <rect x="380" y="112" width="460" height="112" rx="14" fill="#ece9fb"/>
+  <text x="404" y="143" fill="#3b53b8" font-size="16" font-weight="700">Customer</text>
+  <text x="404" y="172" fill="#1f2430" font-size="18">I was charged twice and my API isn't</text>
+  <text x="404" y="198" fill="#1f2430" font-size="18">working — can you help?</text>
+
+  <!-- agent bubble -->
+  <rect x="60" y="250" width="640" height="180" rx="14" fill="#ececec"/>
+  <text x="84" y="282" fill="#9153c6" font-size="16" font-weight="700">Agent</text>
+  <text x="84" y="312" fill="#1f2430" font-size="18">I've flagged the duplicate charge for review and</text>
+  <text x="84" y="338" fill="#1f2430" font-size="18">initiated a refund.</text>
+  <text x="84" y="378" fill="#1f2430" font-size="18">For the API issue, your key expired — please</text>
+  <text x="84" y="404" fill="#1f2430" font-size="18">regenerate it.</text>
+</svg>
