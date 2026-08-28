@@ -120,3 +120,21 @@ See the [docs index](docs/README.md) for the full walkthrough, or jump into [`de
 | Azure AI Projects SDK (Python) | <https://learn.microsoft.com/python/api/overview/azure/ai-projects-readme> |
 | Power Fx language reference | <https://learn.microsoft.com/power-platform/power-fx/overview> |
 | Microsoft Learn — AI agents & workflows training | <https://learn.microsoft.com/training/> |
+
+## ⚖️ License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🌐 Connect with Me
+
+Follow me on social media for updates and more learning resources:
+
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white&style=for-the-badge)](https://twitter.com/thenisals)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge)](https://linkedin.com/in/nisalgunawardhana)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white&style=for-the-badge)](https://instagram.com/thenisals)
+
+**Happy Learning! 🎉**
+
+Remember: Making mistakes is part of learning. Don't be afraid to experiment and try new things!
