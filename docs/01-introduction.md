@@ -1,6 +1,6 @@
 # 1. Introduction
 
-> Part of the [Introduction to Agent-Driven Workflows](../README.md) module.
+> Part of the [Microsoft Foundry Workflows docs](README.md).
 > **Next:** [What are workflows?](02-what-are-workflows.md)
 
 ---
@@ -25,10 +25,10 @@ You're a developer responsible for automating **customer support workflows** at 
 Workflows let you combine multiple AI agents, conditional logic, and human-in-the-loop escalation. By using agent-driven workflows, you can triage many support requests efficiently and at scale **while maintaining reliability and control**.
 
 <p align="center">
-  <img src="../images/single-agent.svg" alt="Single agent producing a generic answer" width="70%">
+  <img src="images/single-agent.svg" alt="Single agent producing a generic answer" width="70%">
 </p>
 <p align="center">
-  <img src="../images/multi-agent-workflow.svg" alt="Multi-agent workflow producing a specific, actionable answer" width="70%">
+  <img src="images/multi-agent-workflow.svg" alt="Multi-agent workflow producing a specific, actionable answer" width="70%">
 </p>
 
 ## What you'll be able to do

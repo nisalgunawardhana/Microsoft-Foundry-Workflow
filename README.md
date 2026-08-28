@@ -2,6 +2,8 @@
 
 A hands-on guide to building, orchestrating, and maintaining multi-agent workflows in **Microsoft Foundry**.
 
+📚 **[Documentation](docs/README.md)** · 🧪 **[Demos](demos/README.md)**
+
 ---
 
 ## What is Microsoft Foundry?
@@ -29,10 +31,10 @@ Imagine you're a developer automating customer support at a growing SaaS company
 Workflows let you combine multiple AI agents, conditional logic, loops, and human-in-the-loop escalation so you can triage requests **efficiently and at scale while keeping reliability and control**.
 
 <p align="center">
-  <img src="introduction/images/single-agent.svg" alt="Single agent producing a generic answer" width="70%">
+  <img src="docs/images/single-agent.svg" alt="Single agent producing a generic answer" width="70%">
 </p>
 <p align="center">
-  <img src="introduction/images/multi-agent-workflow.svg" alt="Multi-agent workflow producing a specific, actionable answer" width="70%">
+  <img src="docs/images/multi-agent-workflow.svg" alt="Multi-agent workflow producing a specific, actionable answer" width="70%">
 </p>
 
 ---
@@ -54,25 +56,35 @@ After working through this material, you'll be able to:
 | Path | Description |
 | --- | --- |
 | [`README.md`](README.md) | This file — overview of Microsoft Foundry and agent-driven workflows. |
-| [`introduction/`](introduction/) | Introductory module folder. |
-| [`introduction/README.md`](introduction/README.md) | **Module index** — links every section document below. |
-| [`introduction/intro.md`](introduction/intro.md) | Short standalone intro to the module. |
-| [`introduction/docs/`](introduction/docs/) | One document per section (see the module map). |
-| [`introduction/images/`](introduction/images/) | Diagrams used throughout the documentation. |
+| [`docs/`](docs/) | The documentation set. |
+| [`docs/README.md`](docs/README.md) | **Docs index** — links every section below. |
+| [`docs/00-intro.md`](docs/00-intro.md) | Short standalone intro. |
+| [`docs/01…09`](docs/) | One document per section (see the module map). |
+| [`docs/images/`](docs/images/) | Diagrams used throughout the documentation. |
+| [`demos/`](demos/) | Runnable workflow demos. |
+| [`demos/README.md`](demos/README.md) | How to import and run the demos. |
+| [`demos/triage-workflow/`](demos/triage-workflow/) | Support-ticket triage workflow — YAML, agent prompt + schema, and a Python runner. |
 
 ### Module map
 
 | # | Topic | Time | Document |
 | --- | --- | --- | --- |
-| 1 | Introduction & the support-triage scenario | 3 min | [docs/01-introduction.md](introduction/docs/01-introduction.md) |
-| 2 | What are workflows? | 3 min | [docs/02-what-are-workflows.md](introduction/docs/02-what-are-workflows.md) |
-| 3 | Identify workflow patterns (sequential, human-in-the-loop, group chat) | 3 min | [docs/03-identify-workflow-patterns.md](introduction/docs/03-identify-workflow-patterns.md) |
-| 4 | Create workflows in Microsoft Foundry (nodes & the designer) | 5 min | [docs/04-create-workflows.md](introduction/docs/04-create-workflows.md) |
-| 5 | Add agents to a workflow (Invoke agent, structured output) | 5 min | [docs/05-add-agents-to-a-workflow.md](introduction/docs/05-add-agents-to-a-workflow.md) |
-| 6 | Apply Power Fx in workflows | 5 min | [docs/06-apply-power-fx.md](introduction/docs/06-apply-power-fx.md) |
-| 7 | Maintain workflows (YAML, versioning, notes) | 5 min | [docs/07-maintain-workflows.md](introduction/docs/07-maintain-workflows.md) |
-| 8 | Use workflows in code (Azure AI Projects SDK) | 5 min | [docs/08-use-workflows-in-code.md](introduction/docs/08-use-workflows-in-code.md) |
-| 9 | Key terms (glossary) | 2 min | [docs/09-key-terms.md](introduction/docs/09-key-terms.md) |
+| 0 | Intro | 1 min | [docs/00-intro.md](docs/00-intro.md) |
+| 1 | Introduction & the support-triage scenario | 3 min | [docs/01-introduction.md](docs/01-introduction.md) |
+| 2 | What are workflows? | 3 min | [docs/02-what-are-workflows.md](docs/02-what-are-workflows.md) |
+| 3 | Identify workflow patterns (sequential, human-in-the-loop, group chat) | 3 min | [docs/03-identify-workflow-patterns.md](docs/03-identify-workflow-patterns.md) |
+| 4 | Create workflows in Microsoft Foundry (nodes & the designer) | 5 min | [docs/04-create-workflows.md](docs/04-create-workflows.md) |
+| 5 | Add agents to a workflow (Invoke agent, structured output) | 5 min | [docs/05-add-agents-to-a-workflow.md](docs/05-add-agents-to-a-workflow.md) |
+| 6 | Apply Power Fx in workflows | 5 min | [docs/06-apply-power-fx.md](docs/06-apply-power-fx.md) |
+| 7 | Maintain workflows (YAML, versioning, notes) | 5 min | [docs/07-maintain-workflows.md](docs/07-maintain-workflows.md) |
+| 8 | Use workflows in code (Azure AI Projects SDK) | 5 min | [docs/08-use-workflows-in-code.md](docs/08-use-workflows-in-code.md) |
+| 9 | Key terms (glossary) | 2 min | [docs/09-key-terms.md](docs/09-key-terms.md) |
+
+### Demos
+
+| Demo | Pattern | Concepts |
+| --- | --- | --- |
+| [`demos/triage-workflow/`](demos/triage-workflow/) | Sequential + If/Else routing + human-in-the-loop | Structured agent output (JSON schema), Power Fx conditions, confidence-based escalation, invoke from code |
 
 ---
 
@@ -85,7 +97,7 @@ After working through this material, you'll be able to:
 5. Test in the **chat window** — send an input and watch how it flows through each node.
 6. When you're happy, invoke the workflow from code with the **Azure AI Projects SDK** by referencing its name.
 
-See the [introduction module index](introduction/README.md) for the full walkthrough.
+See the [docs index](docs/README.md) for the full walkthrough, or jump into [`demos/triage-workflow/`](demos/triage-workflow/) for a working example.
 
 ---
 

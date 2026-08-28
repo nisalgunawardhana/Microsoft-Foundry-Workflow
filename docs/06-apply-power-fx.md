@@ -1,6 +1,6 @@
 # 6. Apply Power Fx in workflows
 
-> Part of the [Introduction to Agent-Driven Workflows](../README.md) module.
+> Part of the [Microsoft Foundry Workflows docs](README.md).
 > **Previous:** [Add agents to a workflow](05-add-agents-to-a-workflow.md) · **Next:** [Maintain workflows in Microsoft Foundry](07-maintain-workflows.md)
 
 ---

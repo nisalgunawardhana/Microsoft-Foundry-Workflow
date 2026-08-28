@@ -1,6 +1,6 @@
 # 3. Identify workflow patterns
 
-> Part of the [Introduction to Agent-Driven Workflows](../README.md) module.
+> Part of the [Microsoft Foundry Workflows docs](README.md).
 > **Previous:** [What are workflows?](02-what-are-workflows.md) · **Next:** [Create workflows in Microsoft Foundry](04-create-workflows.md)
 
 ---

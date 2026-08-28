@@ -5,10 +5,11 @@
 .vscode/
 .idea/
 
-# Node / Python (if examples are added later)
+# Node / Python (demos)
 node_modules/
 __pycache__/
 *.pyc
 .venv/
 venv/
 .env
+.python-version

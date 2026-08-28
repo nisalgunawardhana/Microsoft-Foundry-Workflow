@@ -1,6 +1,6 @@
 # 4. Create workflows in Microsoft Foundry
 
-> Part of the [Introduction to Agent-Driven Workflows](../README.md) module.
+> Part of the [Microsoft Foundry Workflows docs](README.md).
 > **Previous:** [Identify workflow patterns](03-identify-workflow-patterns.md) · **Next:** [Add agents to a workflow](05-add-agents-to-a-workflow.md)
 
 ---
@@ -12,7 +12,7 @@ You can start a workflow from a **blank canvas** or from a **predefined pattern*
 > ⚠️ **Workflows aren't saved automatically.** Save your changes regularly to preserve each version of your design.
 
 <p align="center">
-  <img src="../images/node-types.svg" alt="The Add a workflow action panel in the Microsoft Foundry designer, showing Invoke agent and data transformation nodes" width="70%">
+  <img src="images/node-types.svg" alt="The Add a workflow action panel in the Microsoft Foundry designer, showing Invoke agent and data transformation nodes" width="70%">
 </p>
 
 ## Main node types

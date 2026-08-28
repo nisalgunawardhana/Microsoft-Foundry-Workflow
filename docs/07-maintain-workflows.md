@@ -1,6 +1,6 @@
 # 7. Maintain workflows in Microsoft Foundry
 
-> Part of the [Introduction to Agent-Driven Workflows](../README.md) module.
+> Part of the [Microsoft Foundry Workflows docs](README.md).
 > **Previous:** [Apply Power Fx in workflows](06-apply-power-fx.md) · **Next:** [Use workflows in code](08-use-workflows-in-code.md)
 
 ---
@@ -33,7 +33,7 @@ It also supports collaboration, making it easier to track who changed what and w
 The workflow visualizer lets you attach **notes** to nodes or sections of the workflow. Notes provide context, explain design decisions, or clarify variable usage — helping future maintainers understand the workflow's purpose and logic, reducing errors and accelerating updates.
 
 <p align="center">
-  <img src="../images/workflow-note.svg" alt="A note attached to a Triage-Agent node, describing what it categorizes and where its output is stored" width="75%">
+  <img src="images/workflow-note.svg" alt="A note attached to a Triage-Agent node, describing what it categorizes and where its output is stored" width="75%">
 </p>
 
 ## Best practices for refinement

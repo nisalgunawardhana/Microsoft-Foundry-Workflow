@@ -1,6 +1,6 @@
 # 2. What are workflows?
 
-> Part of the [Introduction to Agent-Driven Workflows](../README.md) module.
+> Part of the [Microsoft Foundry Workflows docs](README.md).
 > **Previous:** [Introduction](01-introduction.md) · **Next:** [Identify workflow patterns](03-identify-workflow-patterns.md)
 
 ---
@@ -15,11 +15,11 @@ A workflow consists of **connected nodes**, where each node performs a specific 
 Together, these nodes form an **execution path** that determines how requests move through the system. By arranging and configuring nodes, you control how information flows and how decisions are made.
 
 <p align="center">
-  <img src="../images/workflow-orchestration.svg" alt="Input flows into a workflow that coordinates Agent A, Agent B, and Agent C, then produces an output" width="80%">
+  <img src="images/workflow-orchestration.svg" alt="Input flows into a workflow that coordinates Agent A, Agent B, and Agent C, then produces an output" width="80%">
 </p>
 
 <p align="center">
-  <img src="../images/workflow-canvas.svg" alt="A group-chat workflow shown on the Microsoft Foundry canvas" width="70%">
+  <img src="images/workflow-canvas.svg" alt="A group-chat workflow shown on the Microsoft Foundry canvas" width="70%">
 </p>
 
 ## Why workflows matter

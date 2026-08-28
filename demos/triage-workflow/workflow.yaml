@@ -1,0 +1,105 @@
+# Triage Workflow — illustrative definition
+#
+# This YAML shows the SHAPE of the workflow described in README.md. Node names and
+# field keys follow the Microsoft Foundry workflow designer's concepts, but the exact
+# schema evolves — after pasting into the portal's YAML view, reconcile field names
+# with what the designer round-trips. See ../../docs/07-maintain-workflows.md.
+
+name: triage-workflow
+description: >
+  Classify an incoming support ticket, route it by category, and escalate to a
+  human when the classifier's confidence is low.
+
+variables:
+  Ticket:
+    type: string
+    default: ""
+  TicketCategory:
+    type: object          # { category, confidence, reason } from Triage-Agent
+    default: {}
+
+nodes:
+  - id: start
+    type: start
+    next: capture_ticket
+
+  - id: capture_ticket
+    type: set_variable
+    variable: Local.Ticket
+    value: "System.LastMessage"
+    next: triage_agent
+
+  - id: triage_agent
+    type: invoke_agent
+    agent:
+      name: Triage-Agent
+      type: agent_reference
+    input_message: Local.Ticket
+    # Details -> Parameters -> Text format: JSON Schema (agents/ticket-category.schema.json)
+    action_settings:
+      save_output_text_as: Local.TriageText
+      save_output_json_as: Local.TicketCategory
+    next: check_confidence
+
+  - id: check_confidence
+    type: if_else
+    branches:
+      - name: confident
+        condition: "Local.TicketCategory.confidence >= 0.8"
+        next: route_by_category
+      - name: low_confidence
+        condition: "Local.TicketCategory.confidence < 0.8"
+        next: ask_human
+
+  - id: ask_human
+    type: ask_question
+    prompt: >
+      Triage confidence is low for this ticket
+      ("Local.TicketCategory.reason"). Which team should handle it —
+      technical, billing, or general?
+    save_response_as: Local.HumanChoice
+    next: apply_human_choice
+
+  - id: apply_human_choice
+    type: set_variable
+    variable: Local.TicketCategory.category
+    value: "Lower(Trim(Local.HumanChoice))"
+    next: route_by_category
+
+  - id: route_by_category
+    type: if_else
+    branches:
+      - name: technical
+        condition: 'Local.TicketCategory.category = "technical"'
+        next: msg_technical
+      - name: billing
+        condition: 'Local.TicketCategory.category = "billing"'
+        next: msg_billing
+      - name: general
+        condition: 'Local.TicketCategory.category = "general"'
+        next: msg_general
+
+  - id: msg_technical
+    type: send_message
+    message: >
+      Routed to Engineering. Category: technical
+      (confidence "Local.TicketCategory.confidence").
+    next: end
+
+  - id: msg_billing
+    type: send_message
+    message: >
+      Routed to Billing. Category: billing
+      (confidence "Local.TicketCategory.confidence").
+    next: end
+
+  - id: msg_general
+    type: send_message
+    message: >
+      Answered from the knowledge base. Category: general
+      (confidence "Local.TicketCategory.confidence").
+    next: end
+
+  - id: end
+    type: end
+    return: Local.TicketCategory

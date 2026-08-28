@@ -1,6 +1,6 @@
 # 8. Use workflows in code
 
-> Part of the [Introduction to Agent-Driven Workflows](../README.md) module.
+> Part of the [Microsoft Foundry Workflows docs](README.md).
 > **Previous:** [Maintain workflows in Microsoft Foundry](07-maintain-workflows.md) · **Next:** [Key terms](09-key-terms.md)
 
 ---

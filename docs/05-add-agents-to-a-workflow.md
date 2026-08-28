@@ -1,6 +1,6 @@
 # 5. Add agents to a workflow
 
-> Part of the [Introduction to Agent-Driven Workflows](../README.md) module.
+> Part of the [Microsoft Foundry Workflows docs](README.md).
 > **Previous:** [Create workflows in Microsoft Foundry](04-create-workflows.md) · **Next:** [Apply Power Fx in workflows](06-apply-power-fx.md)
 
 ---
@@ -33,7 +33,7 @@ In addition to natural-language responses, agents can be configured to return **
 - Store agent output in a **variable** via the **Action settings** of the Invoke agent node (e.g. *Save agent output message as* `Local.TextOutput`, *Save output json_object/json_schema as* `Local.JsonOutput`).
 
 <p align="center">
-  <img src="../images/invoke-agent-settings.svg" alt="Invoke agent node: Action settings for saving output to variables, and Details parameters for choosing a JSON Schema response format" width="85%">
+  <img src="images/invoke-agent-settings.svg" alt="Invoke agent node: Action settings for saving output to variables, and Details parameters for choosing a JSON Schema response format" width="85%">
 </p>
 
 Once an agent is added, its output can be stored in a variable and referenced throughout the workflow — influencing decisions, triggering conditional branches, or providing input to other agents. By thoughtfully adding and configuring agents, you transform a simple sequence of actions into an **intelligent, adaptive workflow**.

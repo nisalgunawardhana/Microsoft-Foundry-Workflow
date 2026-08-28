@@ -1,0 +1,26 @@
+{
+  "name": "ticket_category",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "category": {
+        "type": "string",
+        "enum": ["technical", "billing", "general"],
+        "description": "The single best category for the ticket."
+      },
+      "confidence": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "description": "Classifier confidence. Below 0.8 triggers human routing."
+      },
+      "reason": {
+        "type": "string",
+        "description": "One short sentence explaining the classification."
+      }
+    },
+    "required": ["category", "confidence", "reason"]
+  }
+}

@@ -1,6 +1,6 @@
 # 9. Key terms
 
-> Part of the [Introduction to Agent-Driven Workflows](../README.md) module.
+> Part of the [Microsoft Foundry Workflows docs](README.md).
 > **Previous:** [Use workflows in code](08-use-workflows-in-code.md)
 
 ---
