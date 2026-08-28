@@ -55,21 +55,24 @@ After working through this material, you'll be able to:
 | --- | --- |
 | [`README.md`](README.md) | This file — overview of Microsoft Foundry and agent-driven workflows. |
 | [`introduction/`](introduction/) | Introductory module folder. |
-| [`introduction/README.md`](introduction/README.md) | **Detailed guide**: what workflows are, workflow patterns, creating workflows, adding agents, Power Fx, maintenance, and using workflows in code. |
+| [`introduction/README.md`](introduction/README.md) | **Module index** — links every section document below. |
+| [`introduction/intro.md`](introduction/intro.md) | Short standalone intro to the module. |
+| [`introduction/docs/`](introduction/docs/) | One document per section (see the module map). |
 | [`introduction/images/`](introduction/images/) | Diagrams used throughout the documentation. |
 
 ### Module map
 
-| # | Topic | Time | Covered in |
+| # | Topic | Time | Document |
 | --- | --- | --- | --- |
-| 1 | Introduction & the support-triage scenario | 3 min | [introduction/README.md](introduction/README.md#1-introduction) |
-| 2 | What are workflows? | 3 min | [introduction/README.md](introduction/README.md#2-what-are-workflows) |
-| 3 | Identify workflow patterns (sequential, human-in-the-loop, group chat) | 3 min | [introduction/README.md](introduction/README.md#3-identify-workflow-patterns) |
-| 4 | Create workflows in Microsoft Foundry (nodes & the designer) | 5 min | [introduction/README.md](introduction/README.md#4-create-workflows-in-microsoft-foundry) |
-| 5 | Add agents to a workflow (Invoke agent, structured output) | 5 min | [introduction/README.md](introduction/README.md#5-add-agents-to-a-workflow) |
-| 6 | Apply Power Fx in workflows | 5 min | [introduction/README.md](introduction/README.md#6-apply-power-fx-in-workflows) |
-| 7 | Maintain workflows (YAML, versioning, notes) | 5 min | [introduction/README.md](introduction/README.md#7-maintain-workflows-in-microsoft-foundry) |
-| 8 | Use workflows in code (Azure AI Projects SDK) | 5 min | [introduction/README.md](introduction/README.md#8-use-workflows-in-code) |
+| 1 | Introduction & the support-triage scenario | 3 min | [docs/01-introduction.md](introduction/docs/01-introduction.md) |
+| 2 | What are workflows? | 3 min | [docs/02-what-are-workflows.md](introduction/docs/02-what-are-workflows.md) |
+| 3 | Identify workflow patterns (sequential, human-in-the-loop, group chat) | 3 min | [docs/03-identify-workflow-patterns.md](introduction/docs/03-identify-workflow-patterns.md) |
+| 4 | Create workflows in Microsoft Foundry (nodes & the designer) | 5 min | [docs/04-create-workflows.md](introduction/docs/04-create-workflows.md) |
+| 5 | Add agents to a workflow (Invoke agent, structured output) | 5 min | [docs/05-add-agents-to-a-workflow.md](introduction/docs/05-add-agents-to-a-workflow.md) |
+| 6 | Apply Power Fx in workflows | 5 min | [docs/06-apply-power-fx.md](introduction/docs/06-apply-power-fx.md) |
+| 7 | Maintain workflows (YAML, versioning, notes) | 5 min | [docs/07-maintain-workflows.md](introduction/docs/07-maintain-workflows.md) |
+| 8 | Use workflows in code (Azure AI Projects SDK) | 5 min | [docs/08-use-workflows-in-code.md](introduction/docs/08-use-workflows-in-code.md) |
+| 9 | Key terms (glossary) | 2 min | [docs/09-key-terms.md](introduction/docs/09-key-terms.md) |
 
 ---
 
@@ -82,7 +85,7 @@ After working through this material, you'll be able to:
 5. Test in the **chat window** — send an input and watch how it flows through each node.
 6. When you're happy, invoke the workflow from code with the **Azure AI Projects SDK** by referencing its name.
 
-See [introduction/README.md](introduction/README.md) for the full walkthrough.
+See the [introduction module index](introduction/README.md) for the full walkthrough.
 
 ---
 
