@@ -32,21 +32,22 @@ Each agent's output is automatically passed as the input message to the next age
 ### 2. Open the Workflows tab
 
 1. In the top nav, go to **Build**.
+![Agents page with the Workflows tab highlighted](images/03-workflows-tab.png)
 2. In the left rail, select **Agents**, then switch to the **Workflows** tab (next to *Agents* and *Routines*).
-
-   ![Agents page with the Workflows tab highlighted](images/03-workflows-tab.png)
+![Create button dropdown with the Sequential option selected](images/04-create-sequential.png)
+   
 
 ### 3. Create a Sequential workflow
 
 Click **Create** (top-right) and choose **Sequential**.
 
-![Create button dropdown with the Sequential option selected](images/04-create-sequential.png)
+![Workflow canvas showing Start → Marketing-Analyst → Marketing-Copywriter → Marketing-Editor](images/05-workflow-canvas.png)
 
 ### 4. Add and connect the three agents
 
 The Sequential builder starts with a **Start** node. Add three agent nodes after it, in order. For each node, open the **Agent** panel on the right, click **Select an agent → Create a new agent**, and paste the instructions below.
+![Workflow canvas showing Start → Marketing-Analyst → Marketing-Copywriter → Marketing-Editor](images/06-select-agent.png)
 
-![Workflow canvas showing Start → Marketing-Analyst → Marketing-Copywriter → Marketing-Editor](images/05-workflow-canvas.png)
 
 Keep the default node settings:
 
